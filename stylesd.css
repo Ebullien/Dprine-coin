@@ -1,0 +1,597 @@
+.top-left-header {
+    display: flex;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0%; 
+    left: 0%;
+    padding: 17px; 
+    background-color: #337b; 
+    color: white; 
+    font-size: 1rem; 
+    width: 100%; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    
+  }
+body {
+    font-family: Arial,serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(64, 54, 104, 0.467);
+  }
+
+  .header-image {
+    align-self: 20px;
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%;
+    
+    
+  }
+  
+  
+  .container {
+    text-align: center;
+    
+  }
+  
+  #vibratingImage {
+    width: 600px;
+    height: 400px;
+    transition: transform 0.1s ease-in-out;
+  }
+
+  #balance {
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+  
+  #addTokenBtn {
+    background: linear-gradient(145deg, #360442d7, #e1a7f3);
+    padding: 10px 20px;
+    font-size: rem;
+    box-shadow: 4px 4px 8px #b3b3b3, -4px -4px 8px #d885db;
+    font-weight: bold;
+    background-color: #29022e;
+    color: white;
+    border:navy;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 200px;
+    height: 100px;
+  }
+  
+  #addTokenBtn:hover {
+    background-color: #3366;
+  }
+  
+  /* Vibration animation */
+  .vibrate {
+    animation: vibrate 0.1s infinite;
+  }
+  
+  @keyframes vibrate {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    25% { transform: translate(-1px, -2px) rotate(-1deg); }
+    50% { transform: translate(-3px, 0px) rotate(1deg); }
+    75% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -1px) rotate(-1deg); }
+  }
+/* Reset and Body Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-bottom: 60px; /* Ensure content doesn’t overlap with the navigation */
+}
+
+/* Content Styling */
+#content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #22012bce;
+  color: white;
+  height: 60px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Button */
+.nav-btn {
+  background: none;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.nav-btn span:first-child {
+  font-size: 1.2rem; /* Icon size */
+  display: block;
+  margin-bottom: 3px;
+}
+
+.nav-btn:hover {
+  background-color: #9634aa; /* Darker blue on hover */
+}
+
+/* Active Button Styling (optional, can be toggled with JS) */
+.nav-btn.active {
+  background-color: #632cac;
+}
+/* Reset and Body Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 0;
+}
+
+/* Header Styling */
+.top-header {
+  background-color: #007BFF;
+  color: white;
+  padding: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Level Section Styling */
+.level-section {
+  margin-top: 10px;
+  padding: 10px 20px;
+  position: relative;
+  text-align: left;
+  left: 27%;
+  text-emphasis-color: white;
+}
+#level-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#levelProgress {
+  width: 80%;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  overflow: hidden;
+}
+
+#levelProgress::-webkit-progress-bar {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+#levelProgress::-webkit-progress-value {
+  background-color: #4caf50;
+}
+
+#balance, #level-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+/* Header Styling */
+.top-header {
+  background-color: #42064e;
+  color: white;
+  text-align: right;
+  padding: 10px;
+  position:right;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.username-container {
+  position: absolute;
+  top:2px; /* Adjust positioning */
+  right: 70%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.balance-container {
+  font-size: 1.1rem;
+  margin-top: 10px; /* Adjust to leave space for the username */
+}
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Full viewport height */
+  background-color: #9634aa;
+}
+
+/* Image Container */
+.image-container {
+  position: relative; /* Allows the button to be positioned relative to the image */
+  display: inline-block; /* Ensures the container fits the image size */
+}
+
+/* Image Styling */
+.image {
+  width: 600px; /* Adjust image size */
+  height: auto;
+  border-radius: 10px; /* Optional: Rounded corners */
+  display: block;
+}
+
+/* Add Token Button Styling */
+.add-token-button {
+  position: absolute; /* Place the button over the image */
+  top: 20%; /* Adjust button position from the top */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Ensure perfect centering */
+  background-color: #007BFF; /* Button color */
+  color: white; /* Text color */
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-token-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+#claimButton {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(145deg,#4e4d03, #4c8cda);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -2px 6px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+#claimButton:disabled {
+  cursor: not-allowed;
+  background: linear-gradient(145deg, #cccccc, #bbbbbb);
+}
+
+#claimButton span.balance {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#claimButton span.timer {
+  display: block;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #590174;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Header */
+.top-header {
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main Content */
+main {
+  flex: 2;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Pages (hidden by default) */
+.page {
+  display: none;
+}
+.page.active {
+  display: block;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  background: #333;
+  color: white;
+  padding: 10px 0;
+}
+.nav-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+.nav-btn span:first-child {
+  font-size: 1.5rem;
+  display: inherit;
+}
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav button {
+  color: white;
+  background-color: #444;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #555;
+}
+.content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  
+}
+
+.content h1 {
+  margin: 0;
+}
+.new-div {
+  background-color: #947990; /* Styles for the new div only */
+  background-size: contain;
+  box-shadow:#007bff;
+  background: linear-gradient(145deg,#4e4d03, #4c8cda);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -2px 6px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+/* Styling for the Tasks Page */
+#tasksPage {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #744374;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+#tasksPage h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#tasksPage p {
+  font-size: 16px;
+}
+
+#tasksList {
+  list-style: none;
+  padding: 0;
+}
+
+#tasksList li {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #8f7c7c;
+  border: 1px solid #698fa5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tasksList button {
+  background-color: #4caf50;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+#tasksList button:hover {
+  background-color: #45a049;
+}
+
+#claimMessage {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#playerBalanceDisplay {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+/* General container styling for better layout */
+div {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Styling for buttons */
+#requirementsBtn, #withdrawBtn {
+  background-color: #1ada20; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#requirementsBtn:hover, #withdrawBtn:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+#requirementsBtn:focus, #withdrawBtn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the unordered list */
+ul {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+  margin: 15px 0;
+}
+
+ul li {
+  font-size: 16px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Adding a bit of spacing for emojis in the list items */
+ul li::before {
+  content: attr(data-icon);
+  margin-right: 10px;
+}
+
+/* Styling for individual tasks */
+ul li:first-child {
+  color: green; /* ✅ task completed */
+  font-weight: bold;
+}
+
+ul li:nth-child(2) {
+  color: blue; /* Referrals */
+}
+
+ul li:nth-child(3) {
+  color: purple; /* Gaming task */
+}
+
+ul li:nth-child(4) {
+  color: orange; /* Wallet task */
+}
+
+/* Styling for the parent div if needed */
+#requirementsBtn + p ul {
+  padding-left: 20px; /* Adjust alignment for the list */
+}
+
+#withdrawBtn {
+  margin-left: 15px; /* Ensure spacing between buttons */
+}
+/* General container styling to give a 3D look */
+#friendsPage {
+  background-color: #a162b3; /* Light background for contrast */
+  border: 1px solid #744c64;
+  padding: 20px;
+  margin: 20px auto;
+  width: 100%;
+  height: 140%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.8);
+  transform: perspective(800px) rotateX(5deg) rotateY(5deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for a more interactive 3D look */
+#friendsPage:hover {
+  transform: perspective(800px) rotateX(0deg) rotateY(0deg) scale(1.03);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), -10px -10px 20px rgba(255, 255, 255, 0.9);
+}
+
+
+/* Heading styles for hierarchy */
+#friendsPage h2, #friendsPage h3 {
+  text-align: center;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Referral link styling */
+#referralInfo {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#referralLink {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#referralLink:hover {
+  color: #0056b3;
+  text-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styling for the referrals list */
+#referralsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#referralsList li {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#referralsList li:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
